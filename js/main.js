@@ -1,5 +1,5 @@
 
-$("select").on("change",function(){
+$("select").change(function(){
 
   var select = $("select").val();
 
@@ -44,7 +44,7 @@ url += '?' + $.param({
 
     // 
     
-    $("select").click(function(){
+    $("select").change(function(){
       $(".logo").animate({
        
        width:'4rem',
@@ -52,7 +52,7 @@ url += '?' + $.param({
       });
   });
     
-  $("select").click(function(){
+  $("select").change(function(){
     $(".choice").animate({
      
       marginTop: '-5rem',
@@ -60,7 +60,7 @@ url += '?' + $.param({
     });
   });
   
-  $("select").click(function(){
+  $("select").change(function(){
     $(".header").animate({
      
         height: 'auto',
